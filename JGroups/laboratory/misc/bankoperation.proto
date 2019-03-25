@@ -1,0 +1,12 @@
+option java_package = "pl.edu.agh.dsrg.sr.protos";
+option java_outer_classname = "BankOperationProtos";
+
+message BankOperation {
+    required OperationType type = 1;
+    required double value = 2;
+
+    enum OperationType{
+        ADD = 0;
+        MULTIPLY = 1;
+    }
+}
